@@ -1,0 +1,6 @@
+name: TwerkItAll
+version: '${version}'
+main: org.allstreamer.twerkitall.TwerkItAll
+api-version: '1.20'
+authors: [Allstreamer]
+description: Crouch to grow any plants in your vicinity.
