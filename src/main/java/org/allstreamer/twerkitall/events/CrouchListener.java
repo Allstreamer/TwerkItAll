@@ -68,6 +68,12 @@ public class CrouchListener implements Listener {
         if (!(block_data instanceof Sapling || block_data instanceof Hatchable || block_data instanceof Ageable)) {
             return;
         }
-        block.applyBoneMeal(BlockFace.UP);
+        try {
+            block.applyBoneMeal(BlockFace.UP);
+        }catch (NullPointerException e) {
+            // TODO: Find out why this throws a null pointer exception
+            // TwerkItAll.logger.info(e.toString());
+            // TwerkItAll.logger.info(block.toString());
+        }
     }
 }
